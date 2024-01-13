@@ -23,50 +23,60 @@
   </head>
   <body>
     <div class="content">
-      <div class="wrapper">
-        <section class="hero">
-          <a href="#" class="logo">
-            <img
-              src="./src/assets/images/logo.svg"
-              alt="Base Apparel"
-              class="logo__image"
-            />
-          </a>
-          <h1 class="hero__title">
-            <span class="hero__special">We're</span>
-            coming soon
-          </h1>
-          <p class="hero__description">
-            Hello fellow shoppers! We're currently building our new fashion
-            store. Add your email below to stay up-to-date with announcements
-            and our launch deals.
-          </p>
-          <form class="form">
-            <div class="form__item">
-              <input
-                type="text"
-                placeholder="Email Address"
-                class="form__input"
-              />
-              <button class="btn btn--form" aria-label="Send">
-                <img
-                  src="./src/assets/images/icon-arrow.svg"
-                  alt=""
-                  class="btn__image"
-                />
-              </button>
-            </div>
-            <p class="form__error">
+      <section class="hero">
+        <div class="wrapper">
+          <div class="hero__content">
+            <a href="#" class="logo">
               <img
-                src="./src/assets/images/icon-error.svg"
-                alt=""
-                class="error__image"
+                src="./src/assets/images/logo.svg"
+                alt="Base Apparel"
+                class="logo__image"
               />
-              <span>No email address found</span>
-            </p>
-          </form>
-        </section>
-      </div>
+            </a>
+            <img
+              src="./src/assets/images/hero-mobile.jpg"
+              alt=""
+              class="bg--mobile"
+            />
+            <div class="hero__typography">
+              <h1 class="hero__title">
+                <span class="hero__special">We're</span>
+                coming soon
+              </h1>
+              <p class="hero__description">
+                Hello fellow shoppers! We're currently building our new fashion
+                store. Add your email below to stay up-to-date with
+                announcements and our launch deals.
+              </p>
+              <form class="form">
+                <div class="form__item">
+                  <input
+                    type="text"
+                    placeholder="Email Address"
+                    class="form__input"
+                  />
+                  <button class="btn btn--form" aria-label="Send">
+                    <img
+                      src="./src/assets/images/icon-arrow.svg"
+                      alt=""
+                      class="btn__image"
+                    />
+                  </button>
+                </div>
+                <p class="form__error">
+                  <img
+                    src="./src/assets/images/icon-error.svg"
+                    alt=""
+                    class="error__image"
+                  />
+                  <span>No email address found</span>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <img src="./src/assets/images/hero-desktop.jpg" alt="" class="bg" />
+      </section>
     </div>
   </body>
 </html>

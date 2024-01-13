@@ -73,3 +73,159 @@
 body {
   font-family: var(--primary-ff);
 }
+
+.content {
+  background-image: url("./../assets/images/bg-pattern-desktop.svg"),
+    var(--background-gradient);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  --width: 71.25rem;
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+}
+
+.hero__content {
+  --width: 35rem;
+  max-width: var(--width);
+  padding: 3rem 0;
+}
+
+.hero__special {
+  font-weight: 300;
+  color: var(--color-text);
+}
+
+.hero__title {
+  color: var(--color-heading);
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.hero__description {
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__input {
+  font-family: inherit;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 10rem;
+  padding: 1.25rem 1.7rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.btn--form {
+  cursor: pointer;
+  border: none;
+  background-image: var(--button-gradient);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.1rem 2.5rem;
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  transform: translateY(-50%);
+}
+
+.form__error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-error);
+  font-size: 0.833rem;
+  font-weight: 500;
+}
+
+.logo:link,
+.logo:visited {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 4rem;
+}
+
+.bg--mobile {
+  display: none;
+}
+
+@media (max-width: 61.25rem) {
+  .hero__content {
+    --width: 25rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  .hero {
+    height: auto;
+  }
+
+  .bg {
+    display: none;
+  }
+
+  .hero__content {
+    --width: 100%;
+    padding: 0;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .bg--mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .logo:link,
+  .logo:visited {
+    margin-bottom: 0;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero__typography {
+    max-width: 600px;
+    padding: 3rem 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 3rem;
+  }
+}
