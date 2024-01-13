@@ -170,6 +170,12 @@ body {
   color: var(--color-error);
   font-size: 0.833rem;
   font-weight: 500;
+
+  display: none;
+}
+
+.form__error.show {
+  display: flex;
 }
 
 .logo:link,
